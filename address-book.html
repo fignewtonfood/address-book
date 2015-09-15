@@ -24,6 +24,14 @@
                             <div id="new-addresses">
                                 <div class="new-address">
                                     <div class="form-group">
+                                        <label for="new-addressType">Address Type</label>
+                                        <select class="new-addressType">
+                                            <option value="Home">Home</option>
+                                            <option value="Work">Work</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="new-street">Street</label>
                                         <input type="text" class="form-control new-street">
                                     </div>
@@ -37,7 +45,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <span class="btn btn-primary" id="add-address">Another address</span>
+                            <span class="btn btn-primary" id="add-address">Add another address</span>
                             <button type="submit" class="btn">Add</button>
                         </form>
                     <h2>Contacts:</h2>
@@ -48,6 +56,7 @@
                 <div class="col-md-6">
                     <div id="show-contact">
                         <h2></h2>
+                        <p>Type: <span class = "new-addressType">
                         <p>First name: <span class="first-name"></span></p>
                         <p>Last name: <span class="last-name"></span></p>
                         <p>Addresses:</p>
