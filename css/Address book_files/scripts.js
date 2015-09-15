@@ -1,13 +1,3 @@
-var characters = "!@#$%^&*0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
-
-function changeCharacter() {
-    var randomIndex = Math.floor(characters.length * Math.random());
-    var randomCharacter = characters[randomIndex];
-    $("#show-contact").text(randomCharacter);
-}
-
-
-
 function Contact(firstName, lastName){
     this.firstName = firstName;
     this.lastName = lastName;
@@ -44,10 +34,6 @@ function resetFields() {
 
 //jQuery
 $(document).ready(function(){
-
-    $(".easter").mouseenter(changeCharacter);
-    $(".easter").mouseleave(changeCharacter);
-
     $("#add-address").click(function(){
         $(".new-address").clone().last().appendTo('#new-addresses');
         resetAddress();
